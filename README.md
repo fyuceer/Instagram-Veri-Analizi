@@ -1,102 +1,75 @@
-\# Instagram Veri Analizi
+# 📊 Instagram Veri Analizi
 
+Bu proje, Instagram gönderilerine ait etkileşim ve erişim verilerinin Python kullanılarak analiz edilmesi ve görselleştirilmesi amacıyla geliştirilmiştir.
 
+Projede gönderilerin ana sayfa, hashtag ve keşfet üzerinden aldığı erişimler; beğeni, yorum, paylaşım, profil ziyaretleri ve takipçi kazanımı gibi etkileşim verileri incelenmektedir. Elde edilen sonuçlar çeşitli grafikler ve veri görselleştirme yöntemleri kullanılarak analiz edilmektedir.
 
-Bu proje, Instagram gönderilerine ait etkileşim verilerinin Python kullanılarak analiz edilmesi ve görselleştirilmesi amacıyla geliştirilmiştir.
+Ayrıca kullanıcı deneyimini geliştirmek amacıyla analiz sonuçlarının tek bir pencere üzerinden görüntülenebildiği, **Önceki** ve **Sonraki** butonlarıyla grafikler arasında geçiş yapılabilen bir arayüz geliştirilmiştir.
 
+---
 
+##  Özellikler
 
-Projede farklı erişim kaynakları, gönderi etkileşimleri, profil ziyaretleri ve takipçi kazanımı arasındaki ilişkiler incelenmiştir. Analiz sonuçları grafikler ve görsel veri analizi yöntemleri kullanılarak sunulmaktadır.
+###  Erişim Analizi
 
+- Ana sayfadan gelen erişimlerin incelenmesi
+- Hashtaglerden gelen erişimlerin incelenmesi
+- Keşfet bölümünden gelen erişimlerin incelenmesi
+- Diğer kaynaklardan gelen erişimlerin incelenmesi
+- Erişim kaynaklarının toplam dağılımının görselleştirilmesi
 
+###  Etkileşim Analizi
 
-\## Kullanılan Teknolojiler
+- Beğeni ve gösterim arasındaki ilişkinin incelenmesi
+- Profil ziyaretleri ve yorumlar arasındaki ilişkinin incelenmesi
+- Paylaşım ve gösterim arasındaki ilişkinin incelenmesi
+- Profil ziyaretleri ile takipçi kazanımı arasındaki ilişkinin incelenmesi
 
+###  Metin Analizi
 
+- Gönderi açıklamalarındaki (Caption) kelimelerin analiz edilmesi
+- Hashtag kullanımının incelenmesi
+- WordCloud ile sık kullanılan kelimelerin görselleştirilmesi
 
-\- Python
+###  Korelasyon Analizi
 
-\- Pandas
+- Sayısal değişkenler arasındaki korelasyonların hesaplanması
+- Korelasyon matrisinin ısı haritası (Heatmap) ile gösterilmesi
 
-\- Matplotlib
+###  Takipçi Dönüşüm Analizi
 
-\- Seaborn
+- Profil ziyaretlerinden takipçiye dönüşüm oranının hesaplanması
+- Profil ziyaretleri ile takipçi kazanımı arasındaki ilişkinin görselleştirilmesi
 
-\- WordCloud
+###  Grafik Arayüzü
 
+- Tüm analizlerin tek pencere üzerinde görüntülenmesi
+- ` Önceki` butonu ile önceki analize geçiş
+- `Sonraki ` butonu ile sonraki analize geçiş
+- Dokuz farklı analiz sayfası arasında kolayca gezinme
 
+---
 
-\## Yapılan Analizler
+##  Kullanılan Teknolojiler
 
+| Teknoloji | Kullanım Alanı |
+|---|---|
+| Python | Proje geliştirme |
+| Pandas | Veri okuma ve veri analizi |
+| Matplotlib | Grafik ve veri görselleştirme |
+| Seaborn | Korelasyon ve gelişmiş grafikler |
+| WordCloud | Metin ve kelime sıklığı analizi |
+| Matplotlib Widgets | Grafik arayüzü ve butonlar |
 
+---
 
-Projede aşağıdaki analizler gerçekleştirilmiştir:
-
-
-
-1\. Ana sayfadan gelen erişimlerin dağılımı
-
-2\. Hashtaglerden gelen erişimlerin dağılımı
-
-3\. Keşfet bölümünden gelen erişimlerin dağılımı
-
-4\. Erişim kaynaklarının toplam dağılımı
-
-5\. Caption ve hashtag kelime analizi
-
-6\. Etkileşim değişkenleri arasındaki ilişkilerin incelenmesi
-
-7\. Değişkenler arasındaki korelasyon analizi
-
-8\. Profil ziyaretlerinden takipçiye dönüşüm oranının hesaplanması
-
-9\. Profil ziyaretleri ile takipçi kazanımı arasındaki ilişkinin incelenmesi
-
-
-
-\## Grafik Arayüzü
-
-
-
-Projede analiz sonuçlarının daha kolay incelenebilmesi amacıyla tek pencere üzerinden çalışan bir grafik arayüzü oluşturulmuştur.
-
-
-
-Kullanıcı;
-
-
-
-\- ` Önceki` butonu ile önceki analize,
-
-\- `Sonraki` butonu ile sonraki analize
-
-
-
-geçiş yapabilmektedir.
-
-
-
-Bu sayede tüm grafikler ayrı pencerelerde açılmak yerine tek bir arayüz üzerinden görüntülenebilmektedir.
-
-
-
-\## Proje Yapısı
-
-
+##  Proje Yapısı
 
 ```text
-
 Instagram-Veri-Analizi/
-
 │
-
-├── instagram.py
-
-├── Instagram data.csv
-
-├── README.md
-
-├── requirements.txt
-
-└── .gitignore
-
+├── 📄 instagram.py
+├── 📊 Instagram data.csv
+├── 📖 README.md
+├── 📦 requirements.txt
+└── ⚙️ .gitignore
